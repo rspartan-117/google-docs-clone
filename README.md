@@ -1,23 +1,20 @@
 # Real-Time Collaborative Text Editor with React & Firebase
 
-Welcome to the **Real-Time Collaborative Text Editor** project! This editor, styled like Google Docs, allows multiple users to edit a document simultaneously with live updates and caching. Built using **React**, **Firebase**, **React Quill**, and **sessionStorage** for caching, this project demonstrates key features such as real-time synchronization, offline capabilities, and optimized database interactions.
-
-![Editor Screenshot](assets/editor-screenshot.png) <!-- Update with a screenshot link if available -->
+Welcome to the **Real-Time Collaborative Text Editor** project! This editor, styled like Google Docs, allows multiple users to edit a document simultaneously with live updates. Built using **React**, **Firebase**, and **React Quill**, this project demonstrates key features such as real-time synchronization and optimized database interactions.
 
 ### Project Overview
 
-This project is a collaborative text editor inspired by Google Docs. Users can edit documents in real-time, and changes are immediately synced across all connected clients. By leveraging Firebase Firestore for real-time updates and session-based caching, we achieve both smooth interactions and minimal database usage.
+This project is a collaborative text editor inspired by Google Docs. Users can edit documents in real-time, and changes are immediately synced across all connected clients. By leveraging Firebase Firestore for real-time updates, we achieve both smooth interactions and minimal database usage.
 
 ### Features
 
 - **Real-Time Collaboration**: Multiple users can edit the same document, with each change appearing in real-time.
 - **Firebase Firestore Integration**: Document changes are stored and synchronized using Firestore’s real-time database.
-- **Document Caching**: Session-based caching reduces redundant database calls, ensuring smoother performance and quicker access for users.
 - **Google Docs-Like UI**: An intuitive, Google Docs-inspired UI for a familiar editing experience.
 
 ### Watch the Tutorial
 
-For a step-by-step guide on building this project, check out my YouTube channel **[PedroTech](https://www.youtube.com/@pedrotech)**. You’ll find explanations for all key components, along with code walkthroughs and optimization tips.
+For a step-by-step guide on building this project, check out my YouTube channel **[PedroTech](https://www.youtube.com/@pedrotechnologies)**. You’ll find explanations for all key components, along with code walkthroughs and optimization tips.
 
 ### Installation
 
@@ -46,12 +43,11 @@ To set up the project locally, follow these steps:
 ### How It Works
 
 1. **Text Synchronization**: Uses Firebase Firestore to listen for document changes and broadcast updates to all users in real-time.
-2. **Caching with Session Storage**: Uses `sessionStorage` to cache document data, minimizing database calls when users re-visit during the same session.
-3. **Optimized Editing**: The editor detects idle typing periods and adjusts syncing to reduce redundant operations.
+2. **Optimized Editing**: The editor detects idle typing periods and adjusts syncing to reduce redundant operations.
 
 ### Code Breakdown
 
-- **Editor.tsx**: The main editor component, implementing Firebase document synchronization, caching, and real-time cursor tracking.
+- **Editor.tsx**: The main editor component, implementing Firebase document synchronization and real-time cursor tracking.
 - **firebase-config.js**: Firebase configuration for accessing Firestore.
 - **Styling**: The editor is styled to resemble Google Docs, using custom CSS for a familiar look and feel.
 
