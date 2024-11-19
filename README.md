@@ -21,24 +21,24 @@ For a step-by-step guide on building this project, check out my YouTube channel 
 To set up the project locally, follow these steps:
 
 1. **Clone the repository**:
-    \\\`\`\`
+    ```
     git clone https://github.com/your-username/real-time-text-editor.git
     cd real-time-text-editor
-    \\\`\`\`
+    ```
 
 2. **Install dependencies**:
-    \\\`\`\`
+    ```
     npm install
-    \\\`\`\`
+    ```
 
 3. **Set up Firebase**:
    - Create a new Firebase project at [Firebase Console](https://console.firebase.google.com/).
    - Add a Firestore database to your project and configure your `firebase-config.js` with the Firebase credentials.
 
 4. **Run the app**:
-    \\\`\`\`
+    ```
     npm run dev
-    \\\`\`\`
+    ```
 
 ### How It Works
 
