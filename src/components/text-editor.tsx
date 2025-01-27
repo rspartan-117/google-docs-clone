@@ -83,7 +83,8 @@ function Editor() {
   return (
     <div className="google-docs-editor">
       <ReactQuill ref={quillRef} />
-    </div>
+      </div>
+  
   );
 }
 
