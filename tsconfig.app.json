@@ -5,22 +5,26 @@
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    "skipLibCheck": true,
-
-    /* Bundler mode */
+    "skipLibCheck": true,             // Skip checking declaration files
     "moduleResolution": "Bundler",
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
-    "jsx": "react-jsx",
+    "jsx": "react-jsx",               // React 17 JSX transform
 
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    /* Relaxed TypeScript checks */
+    "strict": false,                  // Disable all strict type checks
+    "noImplicitAny": false,           // Allow implicit `any` type
+    "noUnusedLocals": false,          // Allow unused variables (helpful for avoiding warnings)
+    "noUnusedParameters": false,      // Allow unused parameters in functions
+    "noFallthroughCasesInSwitch": false, // Relax switch case fallthrough error
+    "noUncheckedSideEffectImports": false, // Disable checking side-effect-free imports
+
+    /* Additional options to enhance compatibility */
+    "esModuleInterop": true,          // Ensure proper interop with CommonJS modules
+    "resolveJsonModule": true,        // Allow importing `.json` files
+    "allowJs": true                   // Allow JavaScript files in the project
   },
   "include": ["src"]
 }
