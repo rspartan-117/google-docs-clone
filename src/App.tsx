@@ -3,11 +3,12 @@ import { useEffect } from "react";
 import { auth } from "./firebase-config";
 import { signInAnonymously, onAuthStateChanged } from "firebase/auth";
 import Editor from "./components/text-editor";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
 
   const handleCopyClick = () => {
-    const projectLink = "https://google.com"; // Replace with your deployed URL
+    const projectLink = "https://livewrite.vercel.app/"; // Replace with your deployed URL
 
     // Use the Clipboard API to copy the link to the clipboard
     navigator.clipboard.writeText(projectLink).then(
@@ -43,6 +44,7 @@ function App() {
   
   
   return (
+    
     <div className="App">
       <header>
         <h1>LiveWrite</h1>
@@ -54,6 +56,7 @@ function App() {
         <h3 className="sub-heading start-editing">Start Editing...</h3>
       </header>
       <Editor />
+      <Analytics />
     </div>
   );
 }
